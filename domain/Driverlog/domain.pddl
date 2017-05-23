@@ -1,15 +1,13 @@
 (define (domain driverlog)
   (:requirements :typing :fluents :equality :adl) 
   (:types           
-truck location locatable - object
-driver obj - locatable
-petroltruck electrictruck - truck
-		;;postman
-		 )
+	truck location locatable - object
+	driver obj - locatable
+	petroltruck electrictruck - truck
+  )
 
   (:predicates 
 		(at ?obj - object ?loc - location)
-;;(at ?obj - truck ?loc - location)
 		(in ?obj1 - obj ?obj - truck)
 		;;(carries ?obj1 - obj ?obj - postman)
 		;;(loaded ?pos - postman)
@@ -26,7 +24,6 @@ petroltruck electrictruck - truck
 		(driven)
 		(load ?t - truck)
 		(walked)
-		;;(load-carried ?t - postman)
   )
 
 
