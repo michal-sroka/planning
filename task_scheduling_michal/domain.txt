@@ -7,7 +7,8 @@
 	)
 
 	(:functions 
-	    (time)       					; what is the current time. starts at 0.
+	    	(total-cost)
+		(time)       					; what is the current time. starts at 0.
 		(priority ?t - task)  			; priority of the task 
 		(task-last-executed ?t - task) 	; when was the task last executed.  
 	)
