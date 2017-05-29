@@ -11,7 +11,7 @@
 	(= (priority task1) 1)
 	(= (priority task2) 2)
 	(= (task-last-executed task1) 0)
-	(= (task-last-executed task1) 0)
+	(= (task-last-executed task2) 0)
 )
 (:goal 
 	(and
@@ -21,6 +21,4 @@
 )
 
 (:metric minimize (total-cost))
-
-	;;(:metric minimize (+ (walked) (+ (* (electricity-used) 9) (* (fuel-used) 2))))
 )
