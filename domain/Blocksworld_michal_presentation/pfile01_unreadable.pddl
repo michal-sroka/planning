@@ -1,0 +1,5 @@
+(define (problem blocksworld-prob1)
+  (:domain blocksworld)
+  (:objects a b)
+  (:init (predicate2 a) (predicate2 b) (predicate1 a) (predicate1 b))
+  (:goal (and (predicate4 b a))))

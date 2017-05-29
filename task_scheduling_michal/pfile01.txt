@@ -1,0 +1,25 @@
+(define (problem SCHDULING-1)
+(:domain scheduling)
+(:objects
+	task1 - task
+	task2 - task
+	)
+
+(:init
+	(= (total-cost) 0)
+	(= (time) 0)
+	(= (priority task1) 1)
+	(= (priority task2) 2)
+	(= (task-last-executed task1) 0)
+	(= (task-last-executed task1) 0)
+)
+(:goal 
+	(and
+		(achieved task1)
+		(achieved task2)
+	)
+)
+
+(:metric minimize (total-cost))
+	;;(:metric minimize (+ (walked) (+ (* (electricity-used) 9) (* (fuel-used) 2))))
+)
