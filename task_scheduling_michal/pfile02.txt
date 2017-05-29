@@ -46,5 +46,4 @@
 )
 
 (:metric minimize (total-cost))
-	;;(:metric minimize (+ (walked) (+ (* (electricity-used) 9) (* (fuel-used) 2))))
 )
