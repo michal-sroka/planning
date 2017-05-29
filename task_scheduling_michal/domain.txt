@@ -1,5 +1,5 @@
 (define (domain scheduling)
-	(:requirements :typing :fluents :negative-preconditions) 
+	;; (:requirements :typing :fluents :negative-preconditions) 
 	(:types  task - object )
 
 	(:predicates 
