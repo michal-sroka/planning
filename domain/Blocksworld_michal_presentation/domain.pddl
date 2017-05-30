@@ -1,10 +1,10 @@
 (define (domain blocksworld)
   (:requirements :strips)
-  (:types block - object)
+  (:types block)
   (:predicates (clear ?x - block)
                (on-table ?x - block)
                (holding ?x - block)
-               (on ?x ?y - block))
+               (on ?x - block ?y - block))
 
   (:action pickup
            :parameters (?ob - block)
