@@ -11,12 +11,18 @@
         s3_2 - server
         s4_2 - server
 
+        s1_3 - server
+        s2_3 - server
+        s3_3 - server
+        s4_3 - server
+
         s1_4 - server
         s2_4 - server
         s3_4 - server
 
 	b1 - backend
 	b2 - backend
+        b3 - backend
         b4 - backend
 	)
 	
@@ -33,6 +39,11 @@
                 (in b2 s3_2)
                 (in b2 s4_2)
 
+                (in b3 s1_3)
+                (in b3 s2_3)
+                (in b3 s3_3)
+                (in b3 s4_3)
+
                 (in b4 s1_4)
                 (in b4 s2_4)
                 (in b4 s3_4)
@@ -45,6 +56,10 @@
                 (enabled s2_2)
                 (enabled s3_2)
                 (enabled s4_2)
+                (enabled s1_3)
+                (enabled s2_3)
+                (enabled s3_3)
+                (enabled s4_3)
                 (enabled s1_4)
                 (enabled s2_4)
                 (enabled s3_4)
@@ -57,6 +72,10 @@
                 (= (active-backends s2_2) 1)
                 (= (active-backends s3_2) 1)
                 (= (active-backends s4_2) 1)
+                (= (active-backends s1_3) 1)
+                (= (active-backends s2_3) 1)
+                (= (active-backends s3_3) 1)
+                (= (active-backends s4_3) 1)
                 (= (active-backends s1_4) 1)
                 (= (active-backends s2_4) 1)
                 (= (active-backends s3_4) 1)
@@ -68,12 +87,17 @@
                 (= (inactive-backends s2_2) 0)
                 (= (inactive-backends s3_2) 0)
                 (= (inactive-backends s4_2) 0)
+                (= (inactive-backends s1_3) 0)
+                (= (inactive-backends s2_3) 0)
+                (= (inactive-backends s3_3) 0)
+                (= (inactive-backends s4_3) 0)
                 (= (inactive-backends s1_4) 0)
                 (= (inactive-backends s2_4) 0)
                 (= (inactive-backends s3_4) 0)
 
 		(= (active b1) 4)
 		(= (active b2) 4)
+                (= (active b3) 4)
                 (= (active b4) 3)
 
 		(= (maintanance-count) 0)
@@ -88,6 +112,10 @@
                 (maintained s2_2)
                 (maintained s3_2)
                 (maintained s4_2)
+                (maintained s1_3)
+                (maintained s2_3)
+                (maintained s3_3)
+                (maintained s4_3)
                 (maintained s1_4)
                 (maintained s2_4)
                 (maintained s3_4)
